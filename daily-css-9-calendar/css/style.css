@@ -1,0 +1,85 @@
+#biglabel {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 3em;
+}
+
+#monthyear {
+  text-align: center;
+  font-family: Verdana;
+  font-size: 30px;
+  color: black;
+}
+
+#wday {
+  position: absolute;
+top: 6em;
+  left: 0%;
+  width: 100%;
+  height: 12em;
+}
+
+.day {
+  width: 3em;
+  height: 6em;
+  background: pink;
+  position: absolute;
+}
+
+.wdlabel {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: darkgoldenrod;
+  font-family: Verdana;
+  font-size: 20px;
+  text-align: center;
+}
+
+#dd0, #dd6 {
+  color: red;
+}
+
+.mday {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  background: goldenrod;
+  font-family: Verdana;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+#arrowline {
+  position: absolute;
+  left: 0%;
+  top: 20em;
+  width: 100%;
+  height: 6em;
+  background: transparent;
+}
+
+
+#arrow {
+  position: absolute;
+  opacity: 0.5;
+  background: red;
+  top: 0%;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  z-index: 3;
+  
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: 1;  
+}
+
+@keyframes pulse {
+  0% {top: 0%;}
+  50% {top: 450%;}
+  100% {top: 0%;} 
+}

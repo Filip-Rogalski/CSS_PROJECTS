@@ -1,0 +1,333 @@
+@keyframes bite {
+  0% {top: 32%;}
+  50% {top: 35%;}
+  100% {top: 32%;}
+}
+
+@keyframes shake {
+  0% {right: 14%;}
+  50% {right: 13.90%;}
+  100% {right: 14%;}
+}
+
+@keyframes shake_v {
+  0% {width: 100%;
+  height: 110%;}
+  50% {width: 99%;
+  height: 108%;}
+  100% {width: 100%;
+  height: 110%;}
+}
+
+@keyframes light_v_m {
+  0% {top: 0%;}
+  25% {top: 0%;}
+  50% {top: 10%;}
+  75% {top: 0%;}
+  100% {top: 0%;}
+}
+
+@keyframes wink {
+  95% {height: 7%;}
+  100% {height: 0%;}
+}
+
+.tree {
+  position: absolute;
+  width: 12%;
+  height: 100%;
+  right: 14%;
+  z-index: 3;
+    animation-name: shake;
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+}
+
+
+.trunk {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: sienna;
+}
+
+.left_hand {
+  position: absolute;
+  width: 45%;
+  height: 10%;
+  background: peru;
+  top: 70%;
+  border-radius: 0% 50% 50% 0%;
+}
+
+.right_hand {
+  
+   position: absolute;
+  width: 45%;
+  height: 10%;
+  background: peru;
+  right: 0%;
+  top: 60%;
+  border-radius: 50% 0% 0% 50%;
+  
+}
+
+.frame {
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  background: steelblue;
+  overflow: hidden;
+  bottom: 0%;
+}
+
+.frame1 {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 1000px;
+  height: 700px;
+  border: 10px solid darkgrey;
+}
+
+.head_cont {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  background: transparent;
+  left: 60%;
+  top: 40%;
+}
+
+.head {
+   position: absolute;
+  width: 100%;
+  height: 110%;
+  background: peru;
+  border-radius: 50%;
+  animation-name: shake_v;
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+
+}
+
+.mouth {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: transparent;
+  top: 30%;
+  left: 35%;
+  z-index: 4;
+  
+  -ms-transform: rotate(-22deg);
+  -webkit-transform: rotate(-22deg); 
+  transform: rotate(-22deg);
+  
+   animation-name: bite;
+  animation-duration: 0.1s;
+  animation-iteration-count: infinite;
+  
+}
+
+.nose {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  background: transparent;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+}
+
+.nose_lft {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  border-radius: 50%;
+  background: darkslategray;
+
+}
+
+.nose_rgt {
+  position: absolute;
+  width: 65%;
+  height: 110%;
+  border-radius: 50%;
+  background: darkslategray;
+  right: 0%;
+
+}
+
+.teeth {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  background: transparent;
+  top: 50%;
+  left: 10%;
+}
+
+.tooth_lft {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background: lightyellow;
+  top: 5%;
+  left: 15%;
+  border: 2px solid grey;
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  
+  
+  
+}
+
+.tooth_rgt {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background: lightyellow;
+  right: 15%;
+  border: 2px solid grey;
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+  
+  animation-name: light_v_m;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  
+}
+
+.eye_lft {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  border-radius: 50%;
+  background: black;
+  top: 28%;
+  left: 35%;
+  
+  -ms-transform: rotate(-22deg);
+  -webkit-transform: rotate(-22deg); 
+  transform: rotate(-22deg);
+  
+  animation-name: wink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  
+}
+
+.eye_rgt {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  border-radius: 50%;
+  background: black;
+  top: 20%;
+  left: 45%;
+  
+  -ms-transform: rotate(-22deg);
+  -webkit-transform: rotate(-22deg); 
+  transform: rotate(-22deg);
+  
+  animation-name: wink;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  
+}
+
+.back {
+  position: absolute;
+  background: peru;
+  width: 15%;
+  height: 35%;
+  right: 10%;
+  top: 70%;
+  border-radius: 50%;
+}
+
+.tail {
+  position: absolute;
+  border-radius: 50%;
+  width:  40%;
+  height: 10%;
+  background: grey;
+  top: 95%;
+  right: 20%;
+  
+}
+
+
+.tree1 {
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: sienna;
+  left: 20%;
+}
+
+.tree2 {
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: sienna;
+  left: 50%;
+    -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg); 
+  transform: rotate(-1deg);
+}
+
+.tree3 {
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: sienna;
+  left: 90%;
+}
+
+.tree4 {
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: sienna;
+  left: 35%;
+    -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg); 
+  transform: rotate(-1deg);
+}
+
+.tree5 {
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: sienna;
+
+}
+
+.tree6 {
+    position: absolute;
+  width: 8%;
+  height: 100%;
+  background: sienna;
+  left: 60%;
+  
+  
+}
+
+.tree7 {
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: sienna;
+  left: 10%;
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg); 
+  transform: rotate(2deg);
+}
+
+
+
+

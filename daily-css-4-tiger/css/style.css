@@ -1,0 +1,104 @@
+body {
+  background: lightblue;
+}
+
+.frame {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 600px;
+  background: transparent;
+  border: 2px solid grey;
+}
+
+.head {
+  position: absolute;
+  width: 38%;
+  height: 58%;
+  background: goldenrod;
+  border-radius: 50%;
+  top: 10%;
+  left: 30%;
+}
+
+.eye_left {
+  width: 3%;
+  height: 3%;
+  background: black;
+  position: absolute;
+  top: 30%;
+  border-radius: 50%;
+  left: 65%;
+}
+
+.eye_right {
+  width: 3%;
+  height: 3%;
+  background: black;
+  position: absolute;
+  top: 30%;
+  border-radius: 50%;
+  left: 35%;
+}
+
+.mouth {
+  width: 50%;
+  height: 40%;
+  background: brown;
+  z-index: 3;
+  position: absolute;
+  border-radius: 40%;
+  top: 40%;
+  left: 25%;
+  overflow: hidden;
+}
+
+/.throat {
+  
+  width: 45%;
+  height: 45%;
+  background: red;
+  z-index: 3;
+  position: absolute;
+  border-radius: 40%;
+  top: 20%;
+  left: 30%;
+  
+}
+
+.stripest {
+  position: absolute;
+  width:20%;
+  height: 10%;
+  background: transparent;
+  border-bottom: 20px solid black;
+  border-radius: 35%;
+}
+
+.ear {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  background: goldenrod;
+}
+
+.tooth {
+  position: absolute;
+	width: 0%;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 80px solid whitesmoke;  
+
+  z-index: 3;
+}
+
+.toothb {
+   position: absolute;
+	width: 0%;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 80px solid whitesmoke;  
+}
